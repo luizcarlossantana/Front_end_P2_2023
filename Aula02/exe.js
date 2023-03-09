@@ -61,7 +61,10 @@ for (d in lista_sexo) {
 }
 
 
-res.innerText = `A maior altura do grupo ${maior}`
+console.log(maior)
+console.log(menor)
+console.log(media)
+console.log(conta_f)
 
 
 
