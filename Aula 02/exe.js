@@ -1,15 +1,17 @@
 var lista_altura = [];
 var lista_sexo = [];
 var controle = 0;
-var soma = 0;
-var conta_m = 0;
 var conta_f = 0;
-var media = soma / conta_m;
+var soma = 0;
+var media = 0;
+
+var conta_m = 0;
+
 
 var res = document.getElementById('res')
 
 
-while (controle < 3) {
+while (controle < 2) {
 
     var altura = window.prompt("Digite sua Altura");
     var sexo = window.prompt("Digite seu Sexo");
@@ -49,10 +51,13 @@ for (d in lista_sexo) {
 
     if (lista_sexo[d] == "m") {
 
-        conta_m++;
+
+        conta_m+= 1;
 
         soma += lista_altura[d];
+       
 
+        
 
 
     } else if (lista_sexo[d] == "f") {
@@ -61,10 +66,15 @@ for (d in lista_sexo) {
 }
 
 
-console.log(maior)
-console.log(menor)
-console.log(media)
+console.log("maior altura:"+maior)
+console.log("menor altura:"+menor)
+console.log( media = parseFloat((soma/conta_m)))
 console.log(conta_f)
+console.log(conta_m)
+
+console.log(lista_altura)
+
+console.log(lista_sexo)
 
 
 
