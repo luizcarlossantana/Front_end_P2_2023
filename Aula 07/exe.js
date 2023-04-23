@@ -31,6 +31,7 @@ var pessoa01 = {
 // Questão 02
 
 function mostrar(p) {
+  
   for (b in p) {
 
     console.log(p[b])
@@ -77,17 +78,39 @@ var pessoa02 = {
 //------------------------------------------------------------------------------------------------------------------
 // Questão 06
 
-function comparar (){
+function comparar (p1,p2){
 
-  if (pessoa01 === pessoa02){
+  if (p1 === p2){
 
-    console.log(true)
+    return(true)
 
   }
   else  {
-    console.log(false)
+    return(false)
   }
 }
+
+comparar(pessoa01,pessoa02);
+
+//------------------------------------------------------------------------------------------------------------------
+// Questão 07
+
+function diferença(c1,c2){
+
+  var diferença = {};
+
+  for(f in c1){
+    if(c1[f]!== c2[f]){
+      diferença = c2[f];
+      console.log(diferença)
+    }
+
+  }
+
+}
+
+diferença(pessoa01,pessoa02);
+
 
 
 
