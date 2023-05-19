@@ -1,14 +1,13 @@
 function Enviar(){
     var nome = document.getElementById("nome");
     var email = document.getElementById("email");
-    var menssagem = document.getElementById("msg");
+    var mensagem = document.getElementById("msg");
     var objeto = {};
     objeto.nome = nome.value;
     objeto.email = email.value;
-    objeto.mensagem = menssagem.value;
+    objeto.mensagem = mensagem.value;
 
 
-    console.log(objeto)
 
    inserirMensagem(objeto);
 
